@@ -19,6 +19,17 @@ Adding images: If you want to add an image, you will have to first have to add t
 Note: After doing this, you can link the image into the .html. To see how to do this, either ask ChatGPT or refer to past html files.
 
 Automatic entries:
-It is best to automatically have the entries being updated. This is trickier than you might think. Here is how I've done it in the past:
+It is best to automatically have the entries being updated (people want to see ratings of players and manually updating is a PAIN). This is trickier than you might think. I have used an automatic script in order to hide people's information like email, Venmo, photo consent, etc. Here is how I've done automatic entry list update in the past:
+1. Open the Google form that people use to enter the tournament. Click Responses and then click "Link to Sheets" -> Create a new Spreadsheet -> Create. Open this Spreadsheet in another tab.
+2. Find the spreadsheet that was just created. Keep this open in a separate tab. We will need this for later.
+3. Now, we need to create another spreadsheet. This will be the entries everyone will see. Go to Google Spreadsheets -> Blank Spreadsheet and name this the name of the tournament (for organization).
+4. Now comes the fun part! In another tab, go to the NCSU drive and go to Apps Script. You should see a file called "ExportInformation". Open it and copy the text.
+5. After copying, go back to the main page of Apps Scipt and click New Project and name it with the name of the tournament.
+6. You should now have three tabs open: the spreadsheet that was auto-generated (source spreadsheet), the spreadsheet you manually created (destination spreadsheet), and the Apps Script.
+7. You will now have to make slight modifications to the Apps Script file. You will have to paste in the ids of both the source and destination spreadsheet.
+8. Open the source spreadsheet, click the URL and extract the ID. This is the part that comes in between "/d" and "/edit". For reference on how to do this, see https://stackoverflow.com/questions/36061433/how-do-i-locate-a-google-spreadsheet-id.
+9. Copy and paste the ID of the source spreadsheet on line 3 where it says sourceSpreadsheetId.
+10. Similarly, extract the ID of the destination spreadsheet and paste it on line 4 where it says destinationSpreadsheetId.
+11. When done, use Ctrl + S to save (make sure there are no unsaved changes in the top left corner). You're done!
 
 
