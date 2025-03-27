@@ -24,18 +24,19 @@ It is best to automatically have the entries being updated (people want to see r
 2. Find the spreadsheet that was just created. Keep this open in a separate tab. We will need this for later.
 3. Now, we need to create another spreadsheet. This will be the entries everyone will see. Go to Google Spreadsheets -> Blank Spreadsheet and name this the name of the tournament (for organization).
 4. Now, it is very important to not forget this next step. At the bottom where it says "Sheet1" rename this to "Exported Data". (This is the name used in the script).
-5. Now comes the fun part! In another tab, go to the NCSU drive and go to Apps Script. You should see a file called "ExportInformation". Open it and copy the text.
-6. After copying, go back to the main page of Apps Scipt and click New Project and name it with the name of the tournament.
-7. You should now have three tabs open: the spreadsheet that was auto-generated (source spreadsheet), the spreadsheet you manually created (destination spreadsheet), and the Apps Script.
-8. You will now have to make slight modifications to the Apps Script file. You will have to paste in the ids of both the source and destination spreadsheet.
-9. Open the source spreadsheet, click the URL and extract the ID. This is the part that comes in between "/d" and "/edit". For reference on how to do this, see https://stackoverflow.com/questions/36061433/how-do-i-locate-a-google-spreadsheet-id.
-10. Copy and paste the ID of the source spreadsheet on line 3 where it says sourceSpreadsheetId.
-11. Similarly, extract the ID of the destination spreadsheet and paste it on line 4 where it says destinationSpreadsheetId.
-12. When done, use Ctrl + S to save (make sure there are no unsaved changes in the top left corner). You're done!
-13. Try to "Run" this script. See if anything is wrong. In the past, I have had to "Allow permissions" in order for the script to work. After this, you shouldn't have to run the script.
-14. You're done now! Have someone enter their data into the spreadsheet and see if the destination spreadsheet is updated. The destination spreadsheet should then be updated with their name and rating.
-15. If this is your frist time trying this, you might have to reset the form a couple times. I can't recall how I did this in the past, but there is a block in the Scripts that I believe resets the information.
-  Helpful hint: If you cannot find the script in the drive, here is a link to it: https://script.google.com/u/2/home/projects/1FGApJdENb_cbUGCqgAOBhoU_U5ROm54Ld3bX58ma0PXzC_npeefEmp0V/edit
+5. Now comes the fun part! Open the Google sheets form that people fill out to sign up for the tournament. Then, click on the three dots in the top right corner and select "Apps Script". It is important to create the Script this way so we can "bind" the registration form to our script.
+6. In another tab, go to the NCSU drive and go to Apps Script. You should see a file called "ExportInformation". Alternatively, visit the URL https://script.google.com/u/2/home/projects/1FGApJdENb_cbUGCqgAOBhoU_U5ROm54Ld3bX58ma0PXzC_npeefEmp0V/edit (requires access to the NCSU Drive). Open it and copy the text.
+8. After copying, go back to the main page of Apps Scipt and click New Project and name it with the name of the tournament.
+9. Close the registration form tab. You should now have three tabs open: the spreadsheet that was auto-generated (source spreadsheet), the spreadsheet you manually created (destination spreadsheet), and the Apps Script.
+10. You will now have to make slight modifications to the Apps Script file. You will have to paste in the ids of both the source and destination spreadsheet.
+11. Open the source spreadsheet, click the URL and extract the ID. This is the part that comes in between "/d" and "/edit". For reference on how to do this, see https://stackoverflow.com/questions/36061433/how-do-i-locate-a-google-spreadsheet-id.
+12. Copy and paste the ID of the source spreadsheet on line 3 where it says sourceSpreadsheetId.
+13. Similarly, extract the ID of the destination spreadsheet and paste it on line 4 where it says destinationSpreadsheetId.
+14. When done, use Ctrl + S to save (make sure there are no unsaved changes in the top left corner). You're done!
+15. Try to "Run" this script. See if anything is wrong. In the past, I have had to "Allow permissions" in order for the script to work. After this, you shouldn't have to run the script.
+16. Cool. Let's add a trigger so every time someone submits the form, it's automatically updated. Do this by going to the far left side of the Apps Script and finding the "Triggers" tab.
+17. Add a trigger. Change "Select Event Source" to "From form". Change "Select Event Type" to "On Form Submit".
+18. You're done now! Have someone enter their data into the spreadsheet and see if the destination spreadsheet is updated. The destination spreadsheet should then be updated with their name and rating.
 
 
 If you have any questions or problems with any of the above, please reach out to aiden@thebartlettkids.com. I was the one who created this, and hopefully I remember how to do all this :)
