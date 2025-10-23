@@ -39,3 +39,7 @@ It is best to automatically have the entries being updated (people want to see r
 
 
 If you have any questions or problems with any of the above, please reach out to aiden@thebartlettkids.com. I was the one who created this, and hopefully I remember how to do all this :)
+
+
+
+When we did this process with a different person, they ran into "Unable to enable Github Actions near Step 7". For some reason, their account was not able to enable Github Actions. Maybe try using a school email under github.ncsu.edu or a different Github account.
