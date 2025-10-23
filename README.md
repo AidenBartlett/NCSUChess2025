@@ -11,7 +11,7 @@ Setting up the website:
 6. When done with the .html file, click Commit changes -> Commit changes.
 7. Since we added the earlier static.yml file, once we commit our changes, we have to wait a second and the updates will be added to our website!
   Helpful hint: If you want to make sure the changes are finished, you can view the "Actions" tab.
-8. In order to see the URL of your website, go to Settings -> Pages. On this page, you should see text that says "Your site is live at ...". Copy and paste this URL into another tab.
+8. In order to see the URL of your website, go to Settings -> Pages. On this page, you should see text that says "Your site is live at ...". Copy and paste this URL into another tab. NOTE: You might have to manually go into Actions -> "Create static.yml" -> Deploy" in order to start the process.
 9. If you would like to make changes to the website, edit the index.html file, click commit changes -> commit changes. Wait a minute or two, and then revisit the website.
 
 
