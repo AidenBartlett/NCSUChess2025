@@ -1,4 +1,4 @@
-This is how I did the website, automatic registrations, etc. for NCSU chess tournaments. I will try to make step by step.
+This is how I did the website, automatic registrations, etc. for NCSU chess tournaments. I will try to make step by step. You must use github.com and not an ncsu email.
 
 Setting up the website:
 1. Create Github repo.
@@ -11,7 +11,7 @@ Setting up the website:
 6. When done with the .html file, click Commit changes -> Commit changes.
 7. Since we added the earlier static.yml file, once we commit our changes, we have to wait a second and the updates will be added to our website!
   Helpful hint: If you want to make sure the changes are finished, you can view the "Actions" tab.
-8. In order to see the URL of your website, go to Settings -> Pages. On this page, you should see text that says "Your site is live at ...". Copy and paste this URL into another tab. NOTE: You might have to manually go into Actions -> "Create static.yml" -> Deploy" in order to start the process.
+8. In order to see the URL of your website, go to Settings -> Pages. On this page, you should see text that says "Your site is live at ...". Copy and paste this URL into another tab.
 9. If you would like to make changes to the website, edit the index.html file, click commit changes -> commit changes. Wait a minute or two, and then revisit the website.
 
 
@@ -42,4 +42,4 @@ If you have any questions or problems with any of the above, please reach out to
 
 
 
-When we did this process with a different person, they ran into "Unable to enable Github Actions near Step 7". For some reason, their account was not able to enable Github Actions. Maybe try using a school email under github.ncsu.edu or a different Github account.
+When we did this process with a different person, they ran into "Unable to enable Github Actions near Step 7". For some reason, their account was not able to enable Github Actions. You will have to use another github account (non NCSU).
